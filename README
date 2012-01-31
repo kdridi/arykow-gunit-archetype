@@ -1,0 +1,7 @@
+= INSTALLATION
+git clone git@github.com:kdridi/arykow-gunit-archetype.git
+cd arykow-gunit-archetype
+mvn install
+
+= USAGE
+mvn archetype:generate -DarchetypeGroupId=com.arykow.maven.archetypes -DarchetypeArtifactId=arykow-gunit-archetype

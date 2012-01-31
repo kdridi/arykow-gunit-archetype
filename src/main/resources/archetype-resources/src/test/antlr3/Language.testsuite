@@ -1,0 +1,34 @@
+gunit Language;
+
+@header {
+	package sample;
+}
+
+exprPri1:
+	"12"					returns [12]
+	"(1+2)"					returns [3]
+	"-(1+2)"				returns [-3]
+
+exprPri2:
+	"2*3"					returns [6]
+	"2*3*4"					returns [24]
+	"24/3"					returns [8]
+	"24/3/2"				returns [4]
+	
+expr:
+	"1+2"					returns [3]
+	"1+2+3"					returns [6]
+	"1-2"					returns [-1]
+	"1-2-3"					returns [-4]
+
+statement:
+	"print 12"				FAIL
+	"print 12;"				-> "12\n"
+	"a=5;"					OK
+
+program:
+	"// blablabla"			OK
+	"print 12"				FAIL
+	"print 12;"				-> "12\n"
+	"a=5;"					OK
+	"a=5; print a;"			-> "5\n"

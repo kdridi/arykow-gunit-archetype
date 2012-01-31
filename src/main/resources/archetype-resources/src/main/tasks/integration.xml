@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="run-tasks" basedir=".">
+	<target name="run">
+		<java classname="${class}" failonerror="false">
+			<classpath>
+				<pathelement path="${runtime_classpath}" />
+			</classpath>
+		</java>
+	</target>
+</project>

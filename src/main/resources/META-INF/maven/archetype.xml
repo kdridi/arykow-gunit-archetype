@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype>
+	<id>arykow-gunit-archetype</id>
+	<sources>
+		<source>src\main\java\com\arykow\gunit\Main.java</source>
+	</sources>
+	<resources>
+		<resource>src\main\antlr3\sample\Language.g</resource>
+		<resource>src\main\tasks\integration.xml</resource>
+		<resource>src\main\tasks\test.xml</resource>
+		<resource>src\test\antlr3\Language.testsuite</resource>
+	</resources>
+</archetype>

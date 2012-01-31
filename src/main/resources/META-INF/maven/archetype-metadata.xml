@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="arykow-gunit-archetype">
+	<fileSets>
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>src/main/antlr3</directory>
+			<includes>
+				<include>**/*.g</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>src/test/antlr3</directory>
+			<includes>
+				<include>**/*.testsuite</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>src/main/tasks</directory>
+			<includes>
+				<include>**/*.xml</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>
