@@ -4,9 +4,9 @@ This archetype is dedicated to generate a fully testable ANTLR project using mav
 
 Installing the archetype
 ------------------------
-git clone https://kdridi@github.com/kdridi/arykow-gunit-archetype.git
-cd arykow-gunit-archetype
-mvn install
+git clone https://kdridi@github.com/kdridi/arykow-gunit-archetype.git  
+cd arykow-gunit-archetype  
+mvn install  
 
 Generating a new project
 ------------------------
